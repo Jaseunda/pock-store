@@ -1,0 +1,65 @@
+{
+    "store": {
+      "name": "Pockages",
+      "fallback": "https://pockos.org/store"
+    },
+    "name": "Official PockOS Repository",
+    "version": "1.0.0",
+    "description": "Community-maintained apps and libraries for PockOS",
+    "maintainers": [
+      {
+        "name": "John Dave Natividad",
+        "handle": "jaseunda",
+        "github": "https://github.com/jaseunda"
+      }
+    ],
+    "packages": [
+      {
+        "id": "java-runtime",
+        "name": "Java Runtime Environment",
+        "type": "core",
+        "package": "com.pockvm.runtime",
+        "version": "1.0.0",
+        "icon": "Java.png",
+        "download": "https://pockos.org/store/downloads/java-runtime.app"
+      },
+      {
+        "id": "pockat-framework",
+        "name": "Pockat",
+        "type": "libro",
+        "package": "com.pockos.pockat",
+        "version": "1.0.0",
+        "icon": "Pockat.png",
+        "description": "React-style UI framework for building PockOS apps",
+        "download": "https://pockos.org/store/downloads/pockat-framework.app"
+      },
+      {
+        "id": "x86-sim",
+        "name": "x86 Simulator",
+        "type": "package",
+        "package": "com.pockos.sim.x86",
+        "version": "0.9.3",
+        "icon": "x86.png",
+        "download": "https://pockos.org/store/downloads/x86-sim.app"
+      },
+      {
+        "id": "gallery",
+        "name": "Photos",
+        "type": "app",
+        "package": "com.pockos.gallery",
+        "version": "2.1.0",
+        "icon": "gallery.png",
+        "description": "Simple and fast photo viewer optimized for joystick controls",
+        "download": "https://pockos.org/store/downloads/gallery.app"
+      },
+      {
+        "id": "settings",
+        "name": "System Settings",
+        "type": "core",
+        "package": "com.pockos.settings",
+        "version": "1.0.0",
+        "icon": "settings.png",
+        "download": "https://pockos.org/store/downloads/settings.app"
+      }
+    ]
+  }

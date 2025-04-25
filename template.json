@@ -1,0 +1,38 @@
+{
+  "store": {
+    "name": "Your Store Name",
+    "fallback": "https://your-domain.com/store"
+  },
+  "name": "Your Repository Name",
+  "version": "1.0.0",
+  "description": "Description of your repository",
+  "maintainers": [
+    {
+      "name": "Your Name",
+      "handle": "your-username",
+      "github": "https://github.com/your-username"
+    }
+  ],
+  "packages": [
+    {
+      "id": "example-app",
+      "name": "Example App",
+      "type": "app",
+      "package": "com.example.app",
+      "version": "1.0.0",
+      "icon": "example.png",
+      "description": "Description of your example app",
+      "download": "https://your-domain.com/store/downloads/example-app.app"
+    },
+    {
+      "id": "example-library",
+      "name": "Example Library",
+      "type": "libro",
+      "package": "com.example.library",
+      "version": "1.0.0",
+      "icon": "library.png",
+      "description": "Description of your example library",
+      "download": "https://your-domain.com/store/downloads/example-library.app"
+    }
+  ]
+}
