@@ -51,6 +51,7 @@ Each package object in the `packages` array contains:
 | `version` | String | The version of the package |
 | `icon` | String | Filename of the package icon |
 | `description` | String (optional) | A brief description of the package |
+| `screenshots` | Array (optional) | List of screenshot image filenames (2-6 images) |
 | `download` | String | URL to download the package |
 
 ## Package Types
@@ -63,6 +64,17 @@ The PockOS repository supports several types of packages:
 | `app` | User applications (e.g., Photos) |
 | `libro` | Libraries and frameworks for developers (e.g., Pockat) |
 | `package` | Other installable packages (e.g., x86 Simulator) |
+| `content` | Content packages for specific applications (e.g., GBA games) |
+
+### Content Package Type
+
+Content packages are a special type that provide additional content for specific applications. Important characteristics:
+
+- Content packages must specify a `package` name that matches the target application's package name
+- Only applications with the matching package name can access and download the content
+- This ensures content is only accessible to its intended application
+- Applications can query the repository for content packages that match their package name
+- This allows for expandable application content while maintaining security
 
 ## How to Create a JSON Repository
 
@@ -130,7 +142,35 @@ Here's an example of adding a new game application to the repository:
   "version": "1.0.0",
   "icon": "snake.png",
   "description": "Classic Snake game optimized for PockOS",
+  "screenshots": [
+    "snake-screenshot1.png",
+    "snake-screenshot2.png",
+    "snake-screenshot3.png"
+  ],
   "download": "https://pockos.org/store/downloads/snake-game.app"
+}
+```
+
+### Example: Adding Content for an App
+
+Here's an example of adding content for the GBA emulator:
+
+```json
+{
+  "id": "pokemon-emerald",
+  "name": "Pokemon Emerald",
+  "type": "content",
+  "package": "com.pockos.gba",
+  "version": "1.0.0",
+  "icon": "pokemon-emerald.png",
+  "description": "Pokemon Emerald game for GBA Emulator",
+  "screenshots": [
+    "pokemon-em-screenshot1.png",
+    "pokemon-em-screenshot2.png",
+    "pokemon-em-screenshot3.png",
+    "pokemon-em-screenshot4.png"
+  ],
+  "download": "https://pockos.org/store/downloads/pokemon-emerald.rom"
 }
 ```
 

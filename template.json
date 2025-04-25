@@ -33,6 +33,35 @@
       "icon": "library.png",
       "description": "Description of your example library",
       "download": "https://your-domain.com/store/downloads/example-library.app"
+    },
+    {
+      "id": "example-app-with-screenshots",
+      "name": "Example App With Screenshots",
+      "type": "app",
+      "package": "com.example.appwithscreenshots",
+      "version": "1.0.0",
+      "icon": "example-screenshots.png",
+      "description": "Example app with screenshots",
+      "screenshots": [
+        "example-screenshot1.png",
+        "example-screenshot2.png"
+      ],
+      "download": "https://your-domain.com/store/downloads/example-app-screenshots.app"
+    },
+    {
+      "id": "example-content",
+      "name": "Example Content",
+      "type": "content",
+      "package": "com.example.app",
+      "version": "1.0.0",
+      "icon": "example-content.png",
+      "description": "Example content for an app",
+      "screenshots": [
+        "content-screenshot1.png",
+        "content-screenshot2.png",
+        "content-screenshot3.png"
+      ],
+      "download": "https://your-domain.com/store/downloads/example-content.data"
     }
   ]
 }

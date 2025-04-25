@@ -60,6 +60,36 @@
         "version": "1.0.0",
         "icon": "settings.png",
         "download": "https://pockos.org/store/downloads/settings.app"
+      },
+      {
+        "id": "gba-emulator",
+        "name": "GBA Emulator",
+        "type": "app",
+        "package": "com.pockos.gba",
+        "version": "1.2.0",
+        "icon": "gba.png",
+        "description": "Game Boy Advance emulator with save states and controller support",
+        "screenshots": [
+          "gba-screenshot1.png",
+          "gba-screenshot2.png"
+        ],
+        "download": "https://pockos.org/store/downloads/gba-emulator.app"
+      },
+      {
+        "id": "pokemon-fire-red",
+        "name": "Pokemon Fire Red",
+        "type": "content",
+        "package": "com.pockos.gba",
+        "version": "1.0.0",
+        "icon": "pokemon-fire-red.png",
+        "description": "Pokemon Fire Red game for GBA Emulator",
+        "screenshots": [
+          "pokemon-fr-screenshot1.png",
+          "pokemon-fr-screenshot2.png",
+          "pokemon-fr-screenshot3.png",
+          "pokemon-fr-screenshot4.png"
+        ],
+        "download": "https://pockos.org/store/downloads/pokemon-fire-red.rom"
       }
     ]
   }
