@@ -6,7 +6,7 @@ While the PockOS package repository is publicly accessible to ensure transparenc
 
 ### Custom Archive Format
 
-- All PockOS packages use a proprietary archive format (.pock)
+- All PockOS packages use a proprietary archive format (.pock, .app, libro)
 - The format includes multiple layers of encryption and obfuscation
 - Package contents are not directly accessible through standard archive tools
 - Critical application assets and code are protected from reverse engineering attempts
