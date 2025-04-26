@@ -21,7 +21,8 @@
         "package": "com.pockvm.runtime",
         "version": "1.0.0",
         "icon": "Java.png",
-        "download": "https://pockos.org/store/downloads/java-runtime.app"
+        "download": "https://pockos.org/store/downloads/java-runtime.app",
+        "github_username": "jaseunda"
       },
       {
         "id": "pockat-framework",
@@ -31,7 +32,8 @@
         "version": "1.0.0",
         "icon": "Pockat.png",
         "description": "React-style UI framework for building PockOS apps",
-        "download": "https://pockos.org/store/downloads/pockat-framework.app"
+        "download": "https://pockos.org/store/downloads/pockat-framework.app",
+        "github_username": "jaseunda"
       },
       {
         "id": "x86-sim",
@@ -40,7 +42,8 @@
         "package": "com.pockos.sim.x86",
         "version": "0.9.3",
         "icon": "x86.png",
-        "download": "https://pockos.org/store/downloads/x86-sim.app"
+        "download": "https://pockos.org/store/downloads/x86-sim.app",
+        "github_username": "jaseunda"
       },
       {
         "id": "gallery",
@@ -50,7 +53,8 @@
         "version": "2.1.0",
         "icon": "gallery.png",
         "description": "Simple and fast photo viewer optimized for joystick controls",
-        "download": "https://pockos.org/store/downloads/gallery.app"
+        "download": "https://pockos.org/store/downloads/gallery.app",
+        "github_username": "jaseunda"
       },
       {
         "id": "settings",
@@ -59,7 +63,8 @@
         "package": "com.pockos.settings",
         "version": "1.0.0",
         "icon": "settings.png",
-        "download": "https://pockos.org/store/downloads/settings.app"
+        "download": "https://pockos.org/store/downloads/settings.app",
+        "github_username": "jaseunda"
       },
       {
         "id": "gba-emulator",
@@ -73,7 +78,8 @@
           "gba-screenshot1.png",
           "gba-screenshot2.png"
         ],
-        "download": "https://pockos.org/store/downloads/gba-emulator.app"
+        "download": "https://pockos.org/store/downloads/gba-emulator.app",
+        "github_username": "jaseunda"
       },
       {
         "id": "pokemon-fire-red",
@@ -89,7 +95,8 @@
           "pokemon-fr-screenshot3.png",
           "pokemon-fr-screenshot4.png"
         ],
-        "download": "https://pockos.org/store/downloads/pokemon-fire-red.rom"
+        "download": "https://pockos.org/store/downloads/pokemon-fire-red.rom",
+        "github_username": "jaseunda"
       }
     ]
   }

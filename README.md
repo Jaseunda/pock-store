@@ -1,6 +1,6 @@
 # PockOS Package Repository Documentation
 
-This repository serves as a package store for PockOS, containing various applications, libraries, and core components. This documentation explains the structure of the repository and how to create or contribute to a PockOS JSON repository.
+This repository serves as a package store for PockOS, containing various applications, libraries, and core components. While the repository metadata is public for transparency, all packages are protected using our proprietary archive format and robust signing system (see [SECURITY.md](SECURITY.md) for details). This documentation explains the structure of the repository and how to create or contribute to a PockOS JSON repository.
 
 ## Repository Structure
 
@@ -53,6 +53,7 @@ Each package object in the `packages` array contains:
 | `description` | String (optional) | A brief description of the package |
 | `screenshots` | Array (optional) | List of screenshot image filenames (2-6 images) |
 | `download` | String | URL to download the package |
+| `github_username` | String | The GitHub username of the package developer |
 
 ## Package Types
 
@@ -204,10 +205,32 @@ To contribute to the official PockOS repository:
 
 1. Fork the repository
 2. Add your package to the `packages` array in `index.json`
-3. Submit a pull request with a description of your package
+3. Ensure your package is properly signed with your developer certificate
+4. Verify that all your apps use the same signing keys (if submitting multiple apps)
+5. Add developer information to each package:
+   - Full name
+   - GitHub username
+   - Contact information (optional)
+6. Submit a pull request following these requirements:
+   - Pull request title must include your GitHub username
+   - Pull request title must list the packages being added
+   - GitHub username must match the developer information in the packages
 
-Maintainers will review your submission and merge it if it meets the quality standards.
+Maintainers will review your submission and merge it if it meets the quality standards. Note that packages with inconsistent signing keys or unsigned packages will be rejected during the review process.
+
+### Important Notes
+
+- **Consistent Signing Keys**: All packages submitted to the main store index MUST use the same signing key. This is a strict requirement for maintaining security and trust.
+- **Alternative Hosting**: If you need to use different signing keys, you can host your packages in a community repository. See the "Hosting Options" section for details.
+- **Developer Verification**: Your GitHub username in the pull request must match the developer information in your packages to verify ownership.
 
 ## License
 
-Please include appropriate licensing information for your packages and repository.
+This repository is licensed under the MIT License, which means:
+
+- You are free to use, modify, and distribute the repository and its contents
+- You can use it for commercial purposes
+- The software comes with no warranty or guarantees
+- The authors are not liable for any issues arising from its use
+
+See the [LICENSE](LICENSE) file for the complete terms.
