@@ -1,0 +1,35 @@
+{
+  "verified_repositories": [
+    {
+      "name": "PockOS Official",
+      "github_username": "PockStudio",
+      "repository_url": "https://github.com/PockStudio/pockos",
+      "description": "Official PockOS repository containing core system packages",
+      "verification_date": "2024-01-01",
+      "supported_formats": [".app", ".pock", ".libro"],
+      "trust_level": "official",
+      "verification_status": "active"
+    },
+    {
+      "name": "PockOS Community",
+      "github_username": "pock-developer",
+      "repository_url": "https://github.com/jaseunda/pock-apps",
+      "description": "Sample repository demonstrating PockOS package development best practices",
+      "verification_date": "2024-01-15",
+      "supported_formats": [".app", ".pock"],
+      "trust_level": "partner",
+      "verification_status": "active"
+    }
+  ],
+  "verification_levels": {
+    "official": "Official PockOS repository maintained by PockStudio",
+    "partner": "Verified partner repositories with proven track record",
+    "community": "Community repositories that meet security standards"
+  },
+  "package_formats": {
+    ".app": "Standard PockOS application package",
+    ".pock": "PockOS system extension or utility",
+    ".libro": "PockOS documentation or content package"
+  },
+  "last_updated": "2024-01-01"
+}
